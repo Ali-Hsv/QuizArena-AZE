@@ -9,7 +9,7 @@
 
 📺 [**Смотреть демо**]
 
-![preview](https://jmp.sh/s/tmq7xtd2yputyNE1Nzdg)
+[![preview](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)
 
 ---
 
