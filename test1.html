@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Плавный переход</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .content {
+      transition: opacity 1s ease;
+      opacity: 1;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="content" id="content">
+    <h1>Страница 1</h1>
+    <button id="nextPageBtn">Перейти на другую страницу</button>
+  </div>
+
+  <script>
+    document.getElementById('nextPageBtn').addEventListener('click', function () {
+      const content = document.getElementById('content');
+      
+      // Добавляем класс для плавного исчезновения
+      content.classList.add('fade-out');
+
+      // После завершения анимации переходим на другую страницу
+      setTimeout(function () {
+        window.location.href = 'page2.html'; // Укажите здесь путь к следующей странице
+      }, 1000); // Задержка равна длительности анимации
+    });
+  </script>
+</body>
+</html>
