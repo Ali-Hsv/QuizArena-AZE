@@ -1,3 +1,31 @@
+for(let i = 1; i <= 10; i++){
+    const NewDiv = document.createElement("div");
+    NewDiv.className = "quesButton";
+    NewDiv.innerHTML = `
+        <button onclick="QuesActive(${i})" class="butTon  noHover" id="butt${i}"><span>${i}</span></button>
+        <div class="nonen" id="elm${i}">
+        <span>Sual işarəsinin yerində nə olmalıdır?</span>
+        <div class="container">
+            <div id="flipBox${i}" class="flip-box">
+                <div class="side front">
+                    <img src="img/məntiq/ques/q${i}.jpeg" alt="Лицевая сторона">
+                </div>
+                <div class="side back">
+                    <img src="img/məntiq/ansver/q${i}.jpeg" alt="Обратная сторона">
+                </div>
+            </div>
+            <div class="Answer${i} colorAn">Cavab: <span></span></div>
+        </div>
+        <div class="questButtons">
+            <button class="geri" onclick="back(${i})">⇦</button>
+            <button class="cavab" onclick="flipCard(${i}); banCard(${i});">Cavab</button>
+        </div>
+    `; 
+
+    document.querySelector(".block").appendChild(NewDiv);
+    console.log("New Block!")
+}
+
 const body = document.querySelector(".blockBlack");
 const buttons = document.querySelectorAll(".quesButton");
 let click = [];

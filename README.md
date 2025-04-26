@@ -38,5 +38,5 @@
    ```
 2. Открыть в браузере:
    ```bash
-   Откройте index.html
+   Откройте https://ali-hsv.github.io/QuizArena-AZE/
    ```
