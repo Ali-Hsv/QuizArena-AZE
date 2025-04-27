@@ -1,42 +1,39 @@
-# 🧠 Brain Ring
+# 🧠 Quiz Board
 
-Интерактивная браузерная игра в духе "Брейн-ринг"!  
-Игрок выбирает ячейку с вопросом, видит сам вопрос и может получить ответ — удобно, весело и полезно для тренировки ума.
+Tool for creating interactive quiz boards.
+Create and customize your own quiz boards — design, play, and challenge yourself!
 
 ---
 
-## 🎮 Демка
-
-📺 [**Смотреть демо**]
+## 🎮 [Demo Version](https://ali-hsv.github.io/QuizArena-AZE/)
 
 [![preview](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)
 
 ---
 
-## 🚀 Возможности
+## ✨ Features:
 
-- 🧩 Интерактивные карточки с вопросами
-- 💬 Кнопка "Ответить" — покажет правильный ответ
-- 🎨 Удобный и минималистичный интерфейс
-- ⚡ Работа прямо из браузера, без установки
+_in Development_
+
+- Create custom quizzes with your own answers.
+- Design questions on any topics you love.
+- Set time limits to make your quizzes more challenging.
+- Customize color themes to match your personal style.
 
 ---
 
-## 🛠️ Технологии
+## 🛠️ Technology
 
 - HTML5
-- CSS3 (Flexbox + Grid)
+- CSS3
 - JavaScript (Vanilla)
 
 ---
 
-## 📦 Установка
+## 📦 Installation
 
-1. Склонируй проект:
+1. Clone the project:
    ```bash
    git clone https://github.com/Ali-Hsv/QuizArena-AZE.git
    ```
-2. Открыть в браузере:
-   ```bash
-   Откройте https://ali-hsv.github.io/QuizArena-AZE/
-   ```
+2. [Click and open in browser](https://ali-hsv.github.io/QuizArena-AZE/)
