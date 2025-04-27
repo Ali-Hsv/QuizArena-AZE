@@ -25,11 +25,12 @@ function flipCard(card) {
 }
 
 function newTheme() {
-    const content = document.querySelector('.obDiv');
+    // const content = document.querySelector('.obDiv');
 
-    content.classList.add('fade-out');
-    console.log("themee")
-    setTimeout(function () {
-      window.location.href = './Riyaziyat.html';
-    }, 1000);
+    // content.classList.add('fade-out');
+    // console.log("themee")
+    // setTimeout(function () {
+    //   window.location.href = './Riyaziyat.html';
+    // }, 1000);
+    alert("This function has not been added!")
 };

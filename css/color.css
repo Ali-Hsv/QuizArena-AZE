@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #e0b1cb;
+    --secondary-color: #be95c4;
+    --background-color: #9f86c0;
+    --light-color: #5e548e;
+    --extra-light-color: #231942;
+    --dark-text-color: #110e1b;
+    --light-hover-color: #6c61a0; 
+
+    --wrong-answer-color: #c90808;
+    --wrong-answer-text-color: #360707;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--dark-text-color);
+}
+
+.blockBlack{
+    background: #0000003a;
+}
+
+.obDiv{
+    background: var(--background-color);
+}
+
+header, main{
+    color: var(--extra-light-color);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+main{
+    background-color: var(--secondary-color);
+}
+
+.block{
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.butTon{
+    background-color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.redButt{
+    background-color: var(--wrong-answer-color);
+    color: var(--wrong-answer-text-color);
+}
+
+.noHover:hover{
+    background-color: var(--light-hover-color);
+    color: var(--primary-color);
+    box-shadow: rgba(69, 69, 69, 0.17) 0px -23px 25px 0px inset, rgba(69, 69, 69, 0.15) 0px -36px 30px 0px inset, rgba(69, 69, 69, 0.1) 0px -79px 40px 0px inset, rgba(69, 69, 69, 0.06) 0px 2px 1px, rgba(69, 69, 69, 0.09) 0px 4px 2px, rgba(69, 69, 69, 0.09) 0px 8px 4px, rgba(69, 69, 69, 0.09) 0px 16px 8px, rgba(69, 69, 69, 0.09) 0px 32px 16px;
+}
+
+.scale-up-center{
+    background-color: var(--light-color);
+    color: var(--dark-text-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.container{
+    background: var(--secondary-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.front {
+    background-color: #fff;
+}
+
+.back{
+    background-color: #fff;
+}
+
+.colorAn>span{
+    color: #29db3d;
+    text-shadow: 1px 1px 4px #15d115;
+}
+
+.questButtons>button{
+    background-color: var(--background-color);
+    color: var(--dark-text-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.questButtons>button:hover{
+    color: var(--primary-color);
+}
+
+.scale-down-center{
+    background-color: var(--light-color);
+    color: var(--dark-text-color);
+}
+
+.nextTheme{
+    background: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.nextTheme:hover{
+    background-color: var(--light-hover-color);
+    color: var(--primary-color);
+    box-shadow: rgba(69, 69, 69, 0.17) 0px -23px 25px 0px inset, rgba(69, 69, 69, 0.15) 0px -36px 30px 0px inset, rgba(69, 69, 69, 0.1) 0px -79px 40px 0px inset, rgba(69, 69, 69, 0.06) 0px 2px 1px, rgba(69, 69, 69, 0.09) 0px 4px 2px, rgba(69, 69, 69, 0.09) 0px 8px 4px, rgba(69, 69, 69, 0.09) 0px 16px 8px, rgba(69, 69, 69, 0.09) 0px 32px 16px;
+}

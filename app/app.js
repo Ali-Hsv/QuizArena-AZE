@@ -32,10 +32,10 @@ let click = [];
 
 function QuesActive(box) {
     if (click.includes(box)) {
-        console.log("Элемент существует или массив пуст.");
+        console.log("The element exists or the array is empty.");
 
     } else {
-        console.log("Элемент добавлен:", box);
+        console.log("Element added:", box);
 
         let element = document.getElementById(`elm${box}`);
         console.log(element.id);
