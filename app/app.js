@@ -8,16 +8,18 @@ for(let i = 1; i <= 10; i++){
         <div class="container">
             <div id="flipBox${i}" class="flip-box">
                 <div class="side front">
-                    <img src="img/məntiq/ques/q${i}.jpeg" alt="Лицевая сторона">
+                     <!-- <img src="img/məntiq/ques/q${0}.jpeg" alt="Лицевая сторона"> -->
+                     Question number - ${i}
                 </div>
                 <div class="side back">
-                    <img src="img/məntiq/ansver/q${i}.jpeg" alt="Обратная сторона">
+                    <!-- <img src="img/məntiq/ansver/q${0}.jpeg" alt="Обратная сторона"> -->
+                    Response to question number - ${i}
                 </div>
             </div>
-            <div class="Answer${i} colorAn">Cavab: <span></span></div>
+            <div class="Answer${i} colorAn">Answer: <span></span></div>
         </div>
         <div class="questButtons">
-            <button class="geri" onclick="back(${i})">⇦</button>
+            <button class="geri" onclick="back(${i})"><p>«</p></button>
             <button class="cavab" onclick="flipCard(${i}); banCard(${i});">Cavab</button>
         </div>
     `; 
@@ -68,13 +70,13 @@ window.addEventListener('load', function() {
 });
 
 
-// document.querySelectorAll(".quesButton").forEach(div => {
-//     div.addEventListener("click", function() {
-//         const [_, colon, box] = div.id.match(/elm(\d+)-(\d+)/) || []; //elem - hissesinden sonra hansi reqem oldugunu tapir ve colon, box hissesinesave edir
-//         if (colon && box) {
-//             QuesActive(Number(colon), Number(box));
-//         }else{
-//             console.log("Colon yada box tapılmadı");
-//         }
-//     });
-// });
+document.querySelectorAll(".quesButton").forEach(div => {
+    div.addEventListener("click", function() {
+        const [_, colon, box] = div.id.match(/elm(\d+)-(\d+)/) || []; //elem - hissesinden sonra hansi reqem oldugunu tapir ve colon, box hissesinesave edir
+        if (colon && box) {
+            QuesActive(Number(colon), Number(box));
+        }else{
+            console.log("Colon yada box tapılmadı");
+        }
+    });
+});

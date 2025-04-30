@@ -39,8 +39,15 @@
     font-family: "Simple";
 }
 
-body{
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
+    overflow-x: hidden;  
+    box-sizing: border-box;
+  }
+
+body{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -163,8 +170,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
     max-width: 260px;
-    height: 120px;
+    height: 125px;
     top: 50%;
     left: 50%;
     z-index: 6;
@@ -173,10 +181,14 @@ main{
     cursor:default;
     transition: 0.1s;
     padding: 10px;
+    
 }
 
 .scale-up-center>span{
-    font-size: clamp(0.1rem, 1.5vw, 1rem);
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    word-wrap: break-word;    
+    overflow-wrap: break-word; 
+    white-space: normal;   
 
 }
 
@@ -204,18 +216,16 @@ main{
     position: relative;
     width: 100%;
     max-width: 260px;
-    min-width: 120px;
     height: 100%;
-    max-height: 170px;
-    min-height: 60px;
     perspective: 1000px;
-    border-radius: 6px;
+    border-radius: 20px;
     padding: 5px;
     font-size: 0.6rem;
+    
 }
 
 .Answer1{
-    margin-top: 10px;
+    margin-top: 0%;
 }
 
 .flip-box{
@@ -224,10 +234,8 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 160px;
-    min-width: 20px;
-    max-height: 70px;
-    min-height: 30px;
+    max-width: 250px;
+    height: 70px;
     transform-style: preserve-3d; 
     transition: transform 0.6s ease-in-out;
 }
@@ -237,11 +245,9 @@ main{
 .flip-box .side {
     position: absolute;
     width: 100%;
-    max-width: 160px;
-    min-width: 20px;
-    max-height: 70px;
-    min-height: 30px;
-    border-radius: 5px;
+    max-width: 250px;
+    height: 70px;
+    border-radius: 20px;
     backface-visibility: hidden; 
     display: flex;
     justify-content: center;
@@ -253,18 +259,25 @@ main{
     transform: rotateY(180deg); 
 }
 
-.side img {
+/* .side img {
     width: 100%;
     max-width: 160px;
     min-width: 20px;
     max-height: 70px;
     min-height: 30px;
-    /* top: 20px; */
-}
+} */
 
 .questButtons{
-    margin-top: 5px;
+    width: 90%;
+    max-width: 260px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    gap: 10px;
 }
+
 .questButtons>button{
     border: none;
     border-radius: 3px;
@@ -272,6 +285,19 @@ main{
     font-size: 0.6rem;
     cursor: pointer;
     transition: 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questButtons>button:first-child{
+    height: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+.questButtons>button:first-child>p{
+    font-size: 1.1rem;
+    margin: -3px 0px 0px -1px;
 }
 
 .questButtons>button:hover{
