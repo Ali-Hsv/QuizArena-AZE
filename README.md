@@ -9,6 +9,10 @@ Create and customize your own quiz boards — design, play, and challenge yourse
 
 [![preview](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)](https://i.postimg.cc/5tqn65mk/ezgif-451cd2da9534fc.gif)
 
+## 🎨 [In Figma](https://www.figma.com/design/DFiP8Qg7wOUZTpsqYDnGEm/Quiz-Board?node-id=0-1&t=gNDeK1z0yC5VmOri-1)
+
+<img src="./img/Quize Board In Figma.png" style="border-radius: 12px;"></img>
+
 ---
 
 ## ✨ Features:
