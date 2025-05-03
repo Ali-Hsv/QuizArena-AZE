@@ -1,52 +1,7 @@
-for(let i = 1; i <= 10; i++){
-    const NewDiv = document.createElement("div");
-    NewDiv.className = "quesButton";
-    NewDiv.innerHTML = `
-        <button onclick="QuesActive(${i})" class="butTon  noHover" id="butt${i}"><span>${i}</span></button>
-        <div class="nonen" id="elm${i}">
-        <span>Sual işarəsinin yerində nə olmalıdır?</span>
-        <div class="container">
-            <div id="flipBox${i}" class="flip-box">
-                <div class="side front">
-                     <!-- <img src="img/məntiq/ques/q${0}.jpeg" alt="Лицевая сторона"> -->
-                     Question number - ${i}
-                </div>
-                <div class="side back">
-                    <!-- <img src="img/məntiq/ansver/q${0}.jpeg" alt="Обратная сторона"> -->
-                    Response to question number - ${i}
-                </div>
-            </div>
-            <div class="Answer${i} colorAn">Answer: <span></span></div>
-        </div>
-        <div class="questButtons">
-            <button class="geri" onclick="back(${i})"><p>«</p></button>
-            <button class="cavab" onclick="flipCard(${i}); banCard(${i});">Cavab</button>
-        </div>
-    `; 
-
-    document.querySelector(".block").appendChild(NewDiv);
-    console.log("New Block!")
-}
-
 const body = document.querySelector(".blockBlack");
 const buttons = document.querySelectorAll(".quesButton");
 let click = [];
 
-function QuesActive(box) {
-    if (click.includes(box)) {
-        console.log("The element exists or the array is empty.");
-
-    } else {
-        console.log("Element added:", box);
-
-        let element = document.getElementById(`elm${box}`);
-        console.log(element.id);
-        element.classList.remove("nonen");
-        // element.classList.add("nonenOn");
-        element.classList.add("scale-up-center");  
-        body.classList.add("opsity");
-    }
-}
 function banCard(card){
     click.push(card);
     document.getElementById(`butt${card}`).classList.add("redButt");
@@ -80,3 +35,14 @@ document.querySelectorAll(".quesButton").forEach(div => {
         }
     });
 });
+
+function newTheme() {
+    // const content = document.querySelector('.obDiv');
+
+    // content.classList.add('fade-out');
+    // console.log("themee")
+    // setTimeout(function () {
+    //   window.location.href = './Riyaziyat.html';
+    // }, 1000);
+    alert("This function has not been added!")
+};
