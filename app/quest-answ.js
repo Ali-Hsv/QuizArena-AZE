@@ -46,7 +46,7 @@ function QuesActive(num){
     const questText = quests[num] || "";
     document.querySelector(`.Question${num} span`).textContent = questText;
     console.log("question active");
-//* -------------------------------------------------
+
     if (click.includes(num)) {
         console.log("The element exists or the array is empty.");
 
@@ -59,7 +59,7 @@ function QuesActive(num){
         element.classList.add("scale-up-center");  
         body.classList.add("opsity");
     }
-//* ---------------------------------------------------
+
     return num;
 }
 
